@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--Colours-->
+    <Color x:Key="ColourBack1">#FF003366</Color>
+    <Color x:Key="ColourBack2">#FF336699</Color>
+    <Color x:Key="ColourBack3">#FF6699CC</Color>
+    <Color x:Key="ColourPrimary1">#FF303030</Color>
+    <Color x:Key="ColourPrimary2">#FF666666</Color>
+    <Color x:Key="ColourPrimary3">#FF888888</Color>
+    <Color x:Key="ColourPrimary4">#FFFFFFFF</Color>
+    <Color x:Key="ColourPrimary5">#FEEEEEEE</Color>
+    <Color x:Key="AlternatingColours1">#FFFFFFFF</Color>
+    <Color x:Key="AlternatingColours2">#33003366</Color>
+
+    <!--Brushes-->
+    <SolidColorBrush x:Key="BrushNavBack1" Color="{StaticResource ColourBack1}"/>
+    <SolidColorBrush x:Key="BrushNavBack2" Color="{StaticResource ColourBack2}"/>
+    <SolidColorBrush x:Key="BrushNavBack3" Color="{StaticResource ColourBack3}"/>
+    <SolidColorBrush x:Key="BrushBack1" Color="{StaticResource ColourBack1}"/>
+    <SolidColorBrush x:Key="BrushBack2" Color="{StaticResource ColourBack2}"/>
+    <SolidColorBrush x:Key="BrushBack3" Color="{StaticResource ColourBack3}"/>
+    <SolidColorBrush x:Key="BrushPrimary1" Color="{StaticResource ColourPrimary1}"/>
+    <SolidColorBrush x:Key="BrushPrimary2" Color="{StaticResource ColourPrimary2}"/>
+    <SolidColorBrush x:Key="BrushPrimary3" Color="{StaticResource ColourPrimary3}"/>
+    <SolidColorBrush x:Key="BrushForeground1" Color="{StaticResource ColourPrimary4}"/>
+    <SolidColorBrush x:Key="BrushForeground2" Color="{StaticResource ColourPrimary5}"/>
+    <SolidColorBrush x:Key="BrushDataGridBack1" Color="{StaticResource ColourBack2}"/>
+    <SolidColorBrush x:Key="TabItem.Selected.Background" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="TabItem.Selected.Border" Color="#ACACAC"/>
+
+    <LinearGradientBrush x:Key="WindowTabBack" MappingMode="Absolute" EndPoint="0,40" StartPoint="0,0">
+        <GradientStop Color="{DynamicResource ColourBack1}" Offset="0.0"/>
+        <GradientStop Color="{DynamicResource ColourBack2}" Offset="2.5"/>
+    </LinearGradientBrush>
+
+</ResourceDictionary>

@@ -1,9 +1,29 @@
 ﻿<Application x:Class="InfraDB.App.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:InfraDB.App"
-             StartupUri="MainWindow.xaml">
+             xmlns:vm="clr-namespace:InfraDB.App.ViewModel"
+             xmlns:vw="clr-namespace:InfraDB.App.View"
+             xmlns:local="clr-namespace:InfraDB.App">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/InfraDB.App;component/Themes/DefaultColours.xaml"/>
+                <ResourceDictionary Source="/InfraDB.App;component/Themes/StyleMenu.xaml"/>
+                <ResourceDictionary Source="/InfraDB.App;component/Themes/StyleDataGrid.xaml"/>
+                <ResourceDictionary Source="/InfraDB.App;component/Themes/StyleScrollBar.xaml"/>
+                <!--<ResourceDictionary Source="/GEDashboard.BaseSettings;component/Theme/CloseButton.xaml"/>
+                <ResourceDictionary Source="/GEDashboard.BaseSettings;component/Theme/FilterComboStyle.xaml"/>
+                <ResourceDictionary Source="/GEDashboard.BaseSettings;component/Theme/ItemsCountAlternation.xaml"/>
+                <ResourceDictionary Source="/GEDashboard.BaseSettings;component/Theme/NavButton.xaml"/>
+                <ResourceDictionary Source="/GEDashboard.BaseSettings;component/Theme/RadioButtonYear.xaml"/>
+                <ResourceDictionary Source="/GEDashboard.BaseSettings;component/Theme/RoundComboBox.xaml"/>
+                <ResourceDictionary Source="/GEDashboard.BaseSettings;component/Theme/RoundedTextBox.xaml"/>
+                <ResourceDictionary Source="/GEDashboard.BaseSettings;component/Theme/ScrollBar.xaml"/>
+                <ResourceDictionary Source="/GEDashboard.BaseSettings;component/Theme/DataGridTheme.xaml"/>-->
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate DataType="{x:Type vm:ViewModelKeePass}" >
+                <vw:ViewKeePass/>
+            </DataTemplate>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
